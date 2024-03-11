@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-compatible" x content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+    content="Orquídeas são todas as plantas que compõem a família Orchidaceae, pertencente à ordem Asparagales, uma das maiores famílias de plantas existentes">
+<title>Formulário de Cadastro</title>
+<link rel="stylesheet" type="text/css" href="styleform.css">
+</head>
+<body>
+    <header>
+        <a href="apresentacao.html">Apresentação</a>
+        <a href="home.html">Home</a>
+    </header>
+    <div class="content">
+        <h1>Formulário de Cadastro</h1>
+        <form id="form" onsubmit="validateFieldForm()">
+            <div class="box-form">
+                <div class="box-input">
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="e-mail">E-mail:</label>
+                        <input type="email" name="e-mail" id="e-mail" required>
+                    </div>
+                    <div class="campo">
+                        <label for="celular">Celular:</label>
+                        <input type="tel" name="celular" id="celular" required>
+                    </div>
+                    <div class="campo">
+                        <label for="genero">Gênero:</label>
+                        <label>
+                            <input type="radio" name="genero" value="masculino" checked> Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="feminino"> Feminino
+                        </label>
+                    </div>
+                    <div class="campo">
+                        <label>Conte um pouco da sua experiência:</label>
+                        <textarea row="10" id="experiencia" nome="experiencia"></textarea>
+                    </div>
+                </div>
+                <div class="box-img">
+                    <div class=" conteudo-imagem">
+                        <img src="img/orquidea_b.png" alt=" orquidea-imagem">
+                    </div>
+                </div>
+            </div>
+            <div class="box-button">
+                <input type="submit" value="Concluir Cadastro" />
+            </div>
+        </form>
+        <div class="paragrafo-final">
+            <p class="paragrafo-final-p"> Ao concluir seu cadastro, será um dos mais novos membros da Comunidade dos
+                amantes
+                de Orquídeas.
+            </p>
+        </div>
+    </div>
+    <script src="scriptform.js" type="text/javascript"></script>
+</body>
+</html>
