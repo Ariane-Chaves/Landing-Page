@@ -9,7 +9,8 @@ const validateFieldForm = () => {
     const experienciaValid = validateExperiencia();
 
     if (nameValid && emailValid && celularValid && experienciaValid) {
-        alert("Cadastro concluído com sucesso!")
+        // alert("Cadastro concluído com sucesso!")
+        mostrarPopup();
         form.submit();
     }
 }
@@ -68,4 +69,15 @@ const validateExperiencia = () => {
     }
 
     return true;
+}
+
+const popup = document.getElementById('popup-cadastro');
+const botaoFechar = document.getElementById('fechar-popup');
+
+const mostrarPopup = () => {
+    popup.style.display = 'block';
+}
+
+const fecharPopup = () => {
+    popup.style.display = 'none';
 }
